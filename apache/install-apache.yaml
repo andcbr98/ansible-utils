@@ -1,12 +1,11 @@
 ---
 - name: Install and Configure Apache HTTP Server on Debian
-  hosts: all  # Replace with your Debian host or group name
+  hosts: azure-vms  # Replace with your Debian host or group name
   become: yes  # Enable sudo for privilege escalation
 
   tasks:
     - name: Update packages
       command: sudo apt update -y
-      become: yes
       tags:
         - update
     - name: Install Apache HTTP Server
