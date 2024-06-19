@@ -1,0 +1,16 @@
+---
+- name: Install and Configure Apache HTTP Server on Debian
+  hosts: all  # Replace with your Debian host or group name
+  become: yes  # Enable sudo for privilege escalation
+
+  tasks:
+    - name: Install Apache HTTP Server
+      apt:
+        name: apache2
+        state: present
+
+    - name: Ensure Apache service is running and enabled
+      service:
+        name: apache2
+        state: started
+        enabled: yes
