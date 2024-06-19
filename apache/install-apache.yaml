@@ -1,6 +1,6 @@
 ---
 - name: Install and Configure Apache HTTP Server on Debian
-  hosts: azure-vms  # Replace with your Debian host or group name
+  hosts: azurevms  # Replace with your Debian host or group name
   become: yes  # Enable sudo for privilege escalation
 
   tasks:
