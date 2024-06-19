@@ -4,6 +4,11 @@
   become: yes  # Enable sudo for privilege escalation
 
   tasks:
+    - name: Update packages
+      command: sudo apt update -y
+      become: yes
+      tags:
+        - update
     - name: Install Apache HTTP Server
       apt:
         name: apache2
