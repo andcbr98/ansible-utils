@@ -45,5 +45,6 @@ kubectl get secret awx-admin-password -n awx -o yaml
 echo "<BASE64_PASSWORD" | base64 -d
 ```
 
-[Guide1](Helm install on existing cluster - Ansible AWX Operator Documentation)
+## Useful links
+[Guide1](https://ansible.readthedocs.io/projects/awx-operator/en/latest/installation/helm-install-on-existing-cluster.html)
 [Guide2](https://github.com/ansible/awx-operator/blob/devel/.helm/starter/README.md)
