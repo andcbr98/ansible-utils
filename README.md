@@ -46,5 +46,6 @@ echo "<BASE64_PASSWORD" | base64 -d
 ```
 
 ## Useful links
-[Guide1](https://ansible.readthedocs.io/projects/awx-operator/en/latest/installation/helm-install-on-existing-cluster.html)
-[Guide2](https://github.com/ansible/awx-operator/blob/devel/.helm/starter/README.md)
+[Helm AWX Operator Install](https://ansible.readthedocs.io/projects/awx-operator/en/latest/installation/helm-install-on-existing-cluster.html)
+
+[AWX Operator Values](https://github.com/ansible/awx-operator/blob/devel/.helm/starter/README.md)
