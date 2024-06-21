@@ -42,7 +42,7 @@ helm install -n awx --create-namespace awx-operator awx-operator/awx-operator -f
 ```sh
 kubectl port-forward svc/awx-service -n awx 8080:80 &
 kubectl get secret awx-admin-password -n awx -o yaml
-echo "<BASE64_PASSWORD" | base64 -d
+echo "<BASE64_PASSWORD>" | base64 -d
 ```
 
 ## Useful links
