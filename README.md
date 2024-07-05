@@ -35,7 +35,7 @@ EOF
 ### Install Operator Helm Chart
 ```sh
 helm repo add awx-operator https://ansible.github.io/awx-operator/
-helm repo add
+helm repo update
 helm install -n awx --create-namespace awx-operator awx-operator/awx-operator -f values.yaml
 ```
 ### Access console
